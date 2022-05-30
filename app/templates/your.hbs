@@ -1,0 +1,31 @@
+{{!-- <Navbar>
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>About Super Rentals</h2>
+</div>
+<div class="cards-list">
+{{#each @model as |cards|}}
+  <Cards @cards={{cards}}/>
+{{/each}}
+</div>
+</Navbar> --}}
+
+<nav class="nav-menu">
+  {{!-- <LinkTo @route="index" class="menu-index">
+    <h1>SuperRentals</h1>
+  </LinkTo> --}}
+  <div class="links">
+    <LinkTo @route="index" >
+      <p>All</p>
+    </LinkTo>
+    <LinkTo @route="your">
+      <p class="current">Your</p>
+    </LinkTo>
+    <LinkTo @route="blocked">
+      <p>Blocked</p>
+    </LinkTo>
+  </div>
+</nav>
+  <br/>
+  <br/>
+<Mycardslist @cardslist = {{@model}}/>

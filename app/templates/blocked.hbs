@@ -1,0 +1,19 @@
+<nav class="nav-menu">
+  {{!-- <LinkTo @route="index" class="menu-index">
+    <h1>SuperRentals</h1>
+  </LinkTo> --}}
+  <div class="links">
+    <LinkTo @route="index" >
+      <p>All</p>
+    </LinkTo>
+    <LinkTo @route="your" class="menu-about">
+      <p>Your</p>
+    </LinkTo>
+    <LinkTo @route="blocked" class="menu-about">
+      <p class="current">Blocked</p>
+    </LinkTo>
+  </div>
+</nav>
+  <br/>
+  <br/>
+<Blockedcardslist @cardslist = {{@model}}/>

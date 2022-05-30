@@ -1,0 +1,201 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+a,
+button {
+  font-family: 'Lato', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  background: #ffffff;
+}
+
+a {
+  color: #016aba;
+  text-decoration: none;
+}
+
+button {
+  font-size: 100%;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/**
+
+/**
+ * Content Area
+ */
+
+
+/**
+ * Similar to Jumbotron
+ */
+
+
+
+/**
+ * Individual Rental Listing
+ */
+
+
+.card {
+    flex-basis: 40%;
+    position: relative;
+    height:165px;
+    width:400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    min-width: 320px;
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+    font-family: 'Courier New', monospace;
+    padding: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.card:hover{
+    box-shadow: 0 0 20px rgba(33,33,33,.2); 
+}
+.card h1{
+    font-family: Arial;
+}
+
+.card p{
+    font-family: Arial;
+}
+
+.favtext{
+    /* align-items: center; */
+    /* justify-content: center; */
+    display: block;
+    position:absolute;
+    top:15px;
+    right:15px;
+     
+}
+.favicon{
+ border-radius: 50%;
+ width: 40px;
+ height: 40px;
+ background-color: rgb(241, 214, 214);
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ float: right;
+ /* margin-right: 10%; */
+ /* margin: 0 auto; */
+ /* position:absolute; */
+ /* top:15px;
+ right: 15px; */
+}
+
+.progress{
+    width:100%;
+    height: 15px;
+    background-color: rgb(21, 135, 21);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.progress_fill{
+    /* width:75%; */
+    height:100%;
+    background-color: rgb(254, 50, 84);
+    transition: all 0.3s;
+}
+.dot1 {
+  height: 12px;
+  width: 12px;
+  background-color: rgb(254, 50, 84);
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot2 {
+    height: 12px;
+    width: 12px;
+    background-color: rgb(21, 135, 21);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.cards-list{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.nav-menu p{
+    font-size: 25px;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: grey;
+}
+.nav-menu p:hover{
+    color: rgb(250, 72, 102);
+}
+.nav-menu{
+    background-color: #ffffff;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header{
+  justify-content: center;
+  align-items: center;
+  display: block;
+  padding-left: 3.6%;
+}
+/* .header span,h1{
+  display: block;  
+} */
+
+.searchbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.light{
+  width: 250px;
+  height: 25px;
+  border-radius: 10px;
+}
+.searchimage{
+  opacity: 1;
+}
+
+.light:hover{
+  /* box-shadow: 0 0 20px rgba(33,33,33,.2); */
+  opacity: 1;
+  /* display: inline-flex; */
+  position: relative;
+}
+
+.nav-menu .current{
+  color: rgb(250, 72, 102);
+}

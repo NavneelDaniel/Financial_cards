@@ -1,0 +1,18 @@
+<label class = "searchbar" style="padding-right: 51px; float: right; top:-20px; position:relative">
+    <Input @value={{this.query}} class="light" height="40"/>
+    {{!-- <img class="searchimage" src="assets/images/icons8-search-150.png" width="17" height="17" style="float: center; top:28%; left: 32%;position:absolute"> --}}
+    <span style="float: right; top:15px;  padding-left: 9%; padding-right: 9%; " ><button class="add_button" type="button" style="background-color:rgb(244, 244, 244);padding: 7px; border-radius:5px; border:1px; width:90px; height:39px">Filter</button></span>
+</label>
+<div class="cards-list">
+<Blockedcards::Filter @cardslist={{@cardslist}} @query={{this.query}} as |results|>
+    {{#each results as |cards|}}
+        <Cards @cards={{cards}} />
+    {{/each}}
+</Blockedcards::Filter>
+
+{{!-- <Cardslist::Filter @cardslist={{@cardslist}} @query={{this.query}} as |results|>
+      {{#each results as |cards|}}
+        <Cards @cards={{cards}} />
+      {{/each}}
+</Cardslist::Filter> --}}
+</div>
